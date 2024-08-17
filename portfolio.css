@@ -6,7 +6,7 @@
     text-decoration: none;
     border: none;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body
@@ -34,12 +34,8 @@ header
      color: white;
      font-weight: 800;
      cursor: pointer;
-     transition:0.3s ease-in-out;
 }
-.logo:hover
-{
-    transform: scale(1.1);
-}
+
 nav a 
 {
     margin-left: 3rem;
@@ -47,13 +43,11 @@ nav a
     font-size: 1.3rem;
     color: white;
     font-weight: 500;
-    transition:0.3s ease-in-out;
-    border-bottom: 3px solid transparent;
 }
 nav a:hover
 {
      color: #ffb004;
-     border-bottom: 3px solid #ffb004;
+     border-radius: 1px solid #ffb004;
 }
 
 #menu 
@@ -64,14 +58,14 @@ nav a:hover
 }
 section
 {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 10rem 9% 10rem;
 }
 .home
 {
     background: #151515;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -84,33 +78,40 @@ section
     align-items: center;
     margin-top: 3rem;
 }
-span
-{
-    color: #ffb004;
-}
+
 .home-content h1{
-    margin-top: 1rem;
+    color: #ffb004;
+    margin-top: 5rem;
     font-size: 6rem;
     line-height: 1;
 }
-.home-img img,.about img
+.home-img img
+{
+    width: 300px;
+    height: 50vh;
+    border-radius: 50%;
+    position: relative;
+}
+.about img
 {
     width: 370px;
     height: 37vh;
     border-radius: 50%;
     position: relative;
 }
-
 .home-content h3
 {
-    margin-top: 1rem;
+    color: #ffb004;
+    margin-top: 2rem;
+    padding-left: 10px;
     margin-bottom:2rem;
     font-size: 3rem;
 }
 .home-content p
 {
+    padding-top: 5px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     max-width: 1000px;
 }
 .social-media a{
@@ -152,9 +153,13 @@ span
     background-color: #151515;
     color: white;
 }
+.myworks h1{
+    color: #ffb004;
+}
 .heading 
 {
     font-size: 5rem;
+    color: #ffb004;
 }
 .about-content h2 
 {
@@ -199,11 +204,11 @@ span
 .work-info 
 {
     padding:10%;
-    background-color: #ffb004;
+    background-color: #e6b243;
     color: black;
     width: 500px;
     height: 300px;
-    border-radius: 3rem;
+    border-radius: 20px 100px 100px 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     display: flex;
@@ -213,12 +218,29 @@ span
     align-items: center;
     
 }
-.work-info h4 
+.work-info1
+{
+    padding:10%;
+    background-color: #e6b243;
+    color: black;
+    width: 500px;
+    height: 300px;
+    border-radius: 100px 20px 20px 100px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.work-info h4,.work-info1 h4
 {
     font-size: 2.1rem;
     margin-bottom: 1.5rem;
 }
-.work-info p 
+.work-info p, .work-info1 p
 {
     padding-top: 20px;
     max-height: 100px;
@@ -244,8 +266,11 @@ footer
 {
    padding-bottom: 25px;
    text-align: center;
+   display: flex;
+   flex-direction: row;
    color: #ffb004;
-   
+   text-align: center;
+   justify-content: center;
 }
 .social a{
     font-size: 25px;
@@ -254,17 +279,15 @@ footer
     width: 42px;
     height: 42px;
     line-height: 42px;
-    padding:.45%;
-    border-radius: 50%;
+    padding:.10%;
+    border-radius: 20%;
     margin: 0 10px;
     transition: 0.3s ease-in-out;
 }
-.social a:hover 
-{
-    transform:scale(1.2)translateY(10px);
-    background-color: #ffb004;
-    color: white;
-    box-shadow: 0 0 25px #ffb004;
+.social h2{
+    font-size: 2rem;
+    padding-top: 5px;
+    
 }
 footer ul 
 {
@@ -307,6 +330,7 @@ footer .copy-right{
 {
     margin-top: 50px;
     margin-bottom: 50px;
+    color: #ffb004;
     text-align: center;
     font-size: 5rem;
 }
@@ -319,8 +343,8 @@ footer .copy-right{
 .skills-container
 {
     display:grid ;
-    grid-template-columns: repeat(3,1fr);
-    gap: 35px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 }
 .skills-content 
 {
